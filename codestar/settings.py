@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-ci%2(kysv*fht5pk@sk4la_x+v5gel@1(bmzl((avhj^o%d-&^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-codestar-ci.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['django-codestar-ci.herokuapp.com', 'localhost', '8000-dinakidane-djangoblog-1eknx8y5o1b.ws-eu106.gitpod.io']
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
