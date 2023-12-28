@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-ci%2(kysv*fht5pk@sk4la_x+v5gel@1(bmzl((avhj^o%d-&^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-codestar-ci.herokuapp.com', 'localhost', '8000-dinakidane-djangoblog-1eknx8y5o1b.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['django-codestar-ci.herokuapp.com', 'localhost', '8000-dinakidane-djangoblog-1eknx8y5o1b.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -66,6 +66,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # Add the account middleware:
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = 'codestar.urls'
